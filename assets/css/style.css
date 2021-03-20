@@ -8,15 +8,17 @@ body{
 img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 .container{
-    height: 100vh;
+    min-height: 100vh;
 }
 .firstpart{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 400px 200px;
     grid-template-areas: 'fone fone fone'
                          'ftwo fthree ffour' ;
 }
@@ -31,4 +33,13 @@ img{
 }
 .ffour{
     grid-area: ffour;
+}
+
+.secondpart{
+    margin-top: 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    
 }
